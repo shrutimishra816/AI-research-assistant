@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>V1 Summarizer</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Research Companion</h2>
+    <p id="status-message">Checking for PDF...</p>
+    
+    <button id="summarize-btn" disabled>Summarize PDF</button>
+    
+    <div id="loading" class="hidden">
+      <span class="spinner"></span> Extracting & Summarizing...
+    </div>
+    
+    <ul id="summary-results" class="hidden">
+      </ul>
+  </div>
 
+  <script src="popup.js"></script>
+</body>
+</html>
